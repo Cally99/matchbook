@@ -69,7 +69,7 @@ class MarketData(BaseEndpoint):
     
     
     def get_selected_events(self, ids=None, before=None, after=None, sport_ids=None, category_ids=None,states=MarketStates.All, tag_url_names=None, per_page=500, offset=0,
-                   include_event_participants=Boolean.T, price_depth=3, side=Side.All, minimum_liquidity=None, session=None)
+                   include_event_participants=Boolean.T, price_depth=3, side=Side.All, minimum_liquidity=None, session=None):
     
         params = clean_locals(locals())
         date_time_sent = datetime.datetime.utcnow()
