@@ -90,6 +90,8 @@ class MarketStates:
     '''
     Open = 'open'
     Suspended = 'suspended'
+    Closed = 'closed'
+    Graded = 'graded'
     All = None
     Default = All
 
@@ -103,6 +105,8 @@ class RunnerStates:
     '''
     Open = 'open'
     Suspended = 'suspended'
+    Closed = 'closed'
+    Graded = 'graded'
     All = None
     Default = All
 
