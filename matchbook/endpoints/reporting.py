@@ -153,7 +153,7 @@ class Reporting(BaseEndpoint):
         params = clean_locals(locals())
         date_time_sent = datetime.datetime.utcnow()
         response = self.request(
-            'GET', self.client.urn_edge, 'reports/v1/bets/settled', params=params, target='bets', session=session
+            'GET', self.client.urn_edge, 'reports/v2/bets/settled', params=params, target='bets', session=session
         )
         return self.process_response(response, resources.BetReport, date_time_sent, datetime.datetime.now())
 
